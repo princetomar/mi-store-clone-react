@@ -1,13 +1,14 @@
 import "./App.css";
+import PreNavbar from "./components/PreNavbar";
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
-  const name = "Product";
   return (
-    <div className="App">
-      <h1>Image</h1>
-      <h1>Name : {name}</h1>
-      <h1>Price</h1>
-    </div>
+    <Router>
+      <PreNavbar />
+      <Navbar />
+    </Router>
   );
 }
 
